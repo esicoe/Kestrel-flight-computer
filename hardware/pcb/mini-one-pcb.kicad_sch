@@ -2048,7 +2048,7 @@
 			)
 		)
 		(column_widths 19.685 19.685 19.685)
-		(row_heights 5.715 3.175 3.175 3.175 3.175 3.175 3.175 3.175 3.175)
+		(row_heights 5.715 3.175 6.985 3.175 3.175 3.175 3.175 3.175 3.175)
 		(uuid "00de9e16-70b8-488b-a685-520e931f9127")
 		(cells
 			(table_cell "Version"
@@ -2119,7 +2119,7 @@
 				)
 				(uuid "1fd6489c-949e-4818-b706-7ae65c91a54f")
 			)
-			(table_cell "2026/09/XX"
+			(table_cell "2026/09/16"
 				(exclude_from_sim no)
 				(at 236.22 27.94 0)
 				(size 19.685 3.175)
@@ -2153,10 +2153,10 @@
 				)
 				(uuid "ffba09fa-f490-41b6-9af8-b098f96a08bd")
 			)
-			(table_cell ""
+			(table_cell "1\n"
 				(exclude_from_sim no)
 				(at 216.535 31.115 0)
-				(size 19.685 3.175)
+				(size 19.685 6.985)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -2170,10 +2170,10 @@
 				)
 				(uuid "48146b4c-8501-407c-924f-b86e9ae7cafd")
 			)
-			(table_cell ""
+			(table_cell "2026/09/28\n"
 				(exclude_from_sim no)
 				(at 236.22 31.115 0)
-				(size 19.685 3.175)
+				(size 19.685 6.985)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -2187,10 +2187,10 @@
 				)
 				(uuid "0bc0baa4-cd80-4a37-8d44-08fbee97fc9f")
 			)
-			(table_cell ""
+			(table_cell "Removed via shorting GND and D-"
 				(exclude_from_sim no)
 				(at 255.905 31.115 0)
-				(size 19.685 3.175)
+				(size 19.685 6.985)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -2206,7 +2206,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 34.29 0)
+				(at 216.535 38.1 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2223,7 +2223,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 34.29 0)
+				(at 236.22 38.1 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2240,7 +2240,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 34.29 0)
+				(at 255.905 38.1 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2257,7 +2257,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 37.465 0)
+				(at 216.535 41.275 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2274,7 +2274,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 37.465 0)
+				(at 236.22 41.275 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2291,7 +2291,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 37.465 0)
+				(at 255.905 41.275 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2308,7 +2308,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 40.64 0)
+				(at 216.535 44.45 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2325,7 +2325,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 40.64 0)
+				(at 236.22 44.45 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2342,7 +2342,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 40.64 0)
+				(at 255.905 44.45 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2359,7 +2359,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 43.815 0)
+				(at 216.535 47.625 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2376,7 +2376,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 43.815 0)
+				(at 236.22 47.625 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2393,7 +2393,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 43.815 0)
+				(at 255.905 47.625 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2410,7 +2410,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 46.99 0)
+				(at 216.535 50.8 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2427,7 +2427,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 46.99 0)
+				(at 236.22 50.8 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2444,7 +2444,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 46.99 0)
+				(at 255.905 50.8 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2461,7 +2461,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 216.535 50.165 0)
+				(at 216.535 53.975 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2478,7 +2478,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 236.22 50.165 0)
+				(at 236.22 53.975 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -2495,7 +2495,7 @@
 			)
 			(table_cell ""
 				(exclude_from_sim no)
-				(at 255.905 50.165 0)
+				(at 255.905 53.975 0)
 				(size 19.685 3.175)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
