@@ -1,17 +1,25 @@
 /**
-    * @file    config.h
-    * @brief   Pin and bus configuration.
-    * @author  esicoe
-    * @date    2026/09/29
+    * @file     config.h
+    * @brief    Pin assignments and bus configuration.
+    * @author   esicoe
+    * @date     2026/09/29
 */
 
 #ifndef CONFIG_H
 #define CONFIG_H
 
-// RP SKD and standard libraries
-#include <stdio.h>
-#include "hardware/gpio.h"
+// Includes
+    // Standard libraries
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdbool.h>
 
+    // RP2350 SDK libraries
+    #include "pico/stdlib.h"
+    #include "hardware/gpio.h"
+
+    // Internal libraries
+    #include "LEDs.h"
 
 #define     I2C1_BAUD       400000UL        // 400 kHz
 #define     I2C0_BAUD       400000UL        // 400 kHz
@@ -47,4 +55,6 @@
 #define     UART1_TX        24  // PIN 25
 #define     UART1_RX        25  // PIN 26
 
-#endif // CONFIG_H
+void board_init(void);
+
+#endif // config_h

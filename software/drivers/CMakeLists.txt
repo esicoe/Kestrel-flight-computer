@@ -25,6 +25,12 @@ endif()
 # ====================================================================================
 set(PICO_BOARD pico2 CACHE STRING "Board type")
 
+# mini-one rev 1: RP2354B. Custom board header boards/board_cfg.h.
+# Plain (non-cache) variables override the Pico extension's PICO_BOARD line above.
+set(PICO_BOARD_HEADER_DIRS ${CMAKE_CURRENT_LIST_DIR}/boards)
+set(PICO_BOARD board_cfg)
+set(PICO_PLATFORM rp2350-arm-s)
+
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
@@ -35,7 +41,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(drivers drivers.c )
+add_executable(drivers main.c src/config.c src/LEDs.c)
 
 pico_set_program_name(drivers "drivers")
 pico_set_program_version(drivers "0.1")
@@ -51,6 +57,7 @@ target_link_libraries(drivers
 # Add the standard include files to the build
 target_include_directories(drivers PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/drivers/include
 )
 
 # Add any user requested libraries
