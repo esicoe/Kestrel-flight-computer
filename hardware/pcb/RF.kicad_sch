@@ -481,129 +481,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_4ms_Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_SparkFun-PowerSymbol:GND"
 			(power global)
 			(pin_names
@@ -2368,16 +2245,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 182.88) (xy 162.56 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93e1e2c3-2b76-4126-893e-8209657b73ef")
-	)
-	(wire
-		(pts
 			(xy 132.08 115.57) (xy 135.89 115.57)
 		)
 		(stroke
@@ -2786,7 +2653,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06d779ee-a4f7-414a-bbac-902e58da846c")
-		(property "Reference" "C43"
+		(property "Reference" "C44"
 			(at 140.208 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2848,7 +2715,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "C43")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -2866,7 +2733,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24b7ed9f-22f2-4b58-9a01-42ae1f551105")
-		(property "Reference" "C46"
+		(property "Reference" "C47"
 			(at 151.13 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,7 +2797,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "C46")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -2947,7 +2814,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3581a9ee-7d0d-4d0b-aeff-9444a9fe76d3")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR076"
 			(at 102.87 127 0)
 			(hide yes)
 			(show_name no)
@@ -3007,7 +2874,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR075")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -3108,7 +2975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c24ee4d-a4f6-45e8-9b21-33e5dc7bcc8f")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR085"
 			(at 154.94 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -3169,7 +3036,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR084")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -3316,7 +3183,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5dcd9253-e53f-4592-a5a7-ef28b55aeee8")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR081"
 			(at 146.05 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3376,7 +3243,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR080")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -3497,7 +3364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60ef913a-cc20-48e7-a3f1-4f8c17b74c31")
-		(property "Reference" "C42"
+		(property "Reference" "C43"
 			(at 130.81 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3561,7 +3428,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "C42")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -3579,7 +3446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "630f9af3-8852-4387-bd76-73e0f85ede8a")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR080"
 			(at 144.78 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3640,7 +3507,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR079")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -3659,7 +3526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "786a1aa6-958a-4228-b48d-caed09216410")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR077"
 			(at 102.87 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -3720,7 +3587,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR076")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -4014,7 +3881,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e166446-9558-4728-95bf-7572f672e5e9")
-		(property "Reference" "C45"
+		(property "Reference" "C46"
 			(at 150.368 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4076,7 +3943,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "C45")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -4095,7 +3962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abc05d59-75fc-453a-b46f-52e56e4da749")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR082"
 			(at 146.05 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4156,7 +4023,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR081")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -4174,7 +4041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af5c1c36-cad4-4917-b732-970c13bccea5")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR084"
 			(at 148.59 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4235,7 +4102,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR083")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -4335,7 +4202,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1725ba6-d785-469f-82b6-0958b81c6a8c")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR083"
 			(at 148.59 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -4395,7 +4262,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR082")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -4413,7 +4280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6eae071-3324-4d9d-bd07-3db65e93f4bc")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR078"
 			(at 128.27 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4474,7 +4341,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR077")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -4493,7 +4360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7fc881d-12a8-4b9c-9253-12096056c31c")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR079"
 			(at 132.08 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -4554,7 +4421,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR078")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -4571,7 +4438,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3b6ccd4-cbc2-4d83-b6cc-a51e9c92333a")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR075"
 			(at 95.25 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4631,7 +4498,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR074")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -4649,7 +4516,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd170d50-b4ef-4df0-b601-86820de459dc")
-		(property "Reference" "C44"
+		(property "Reference" "C45"
 			(at 140.97 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4713,162 +4580,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "C44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 161.29 182.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e233dd80-a4b4-4981-baa5-a154ea197a79")
-		(property "Reference" "#PWR085"
-			(at 165.1 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 155.702 182.88 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 161.29 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "40846f5f-0125-4d49-99ad-6aa905b3d953")
-		)
-		(instances
-			(project "mini-one-pcb"
-				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_4ms_Connector:TestPoint")
-		(at 162.56 182.88 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "eab8f7d0-c90d-4558-8fd7-319b9019abdf")
-		(property "Reference" "TP3"
-			(at 171.323 184.277 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 172.593 181.737 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 162.56 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 162.56 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b65722c9-4486-475d-bce0-e3be15c10a67")
-		)
-		(instances
-			(project "mini-one-pcb"
-				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/755120ff-6313-4b41-b2ec-5703ee420036"
-					(reference "TP3")
+					(reference "C45")
 					(unit 1)
 				)
 			)

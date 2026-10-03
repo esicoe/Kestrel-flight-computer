@@ -3651,7 +3651,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "051aa161-c8ea-4ec4-b776-6c286bfbed25")
-		(property "Reference" "R30"
+		(property "Reference" "R27"
 			(at 118.11 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3737,7 +3737,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "R30")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -4173,7 +4173,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1127d6a2-f8e6-4060-8d29-fe9d2285e089")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR073"
 			(at 162.56 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -4233,7 +4233,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR066")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -4250,7 +4250,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b4f0615-27c6-4419-8109-fbfba0e5d02c")
-		(property "Reference" "R26"
+		(property "Reference" "R28"
 			(at 129.54 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4336,7 +4336,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -4457,7 +4457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27dcaead-d69f-403d-a94b-f7b493efbb16")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR058"
 			(at 46.99 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -4518,7 +4518,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR057")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -4536,7 +4536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c94924e-4ae4-4ae0-874d-5d78918b9bab")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR070"
 			(at 146.05 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4597,7 +4597,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR072")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -4615,7 +4615,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d153ea4-e4fe-40fd-bbb4-56ee5c156bda")
-		(property "Reference" "C40"
+		(property "Reference" "C39"
 			(at 143.764 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4701,7 +4701,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C40")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -4718,7 +4718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33f4ed7b-76b1-4621-b41c-973387da047e")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR064"
 			(at 92.71 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4778,7 +4778,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR063")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4796,7 +4796,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c6f4714-bb80-4568-a1c6-5c26760f1113")
-		(property "Reference" "C37"
+		(property "Reference" "C38"
 			(at 90.17 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4882,7 +4882,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C37")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -4901,7 +4901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ea7e508-a6f3-41e4-bfb5-bef473fa79ba")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR061"
 			(at 72.39 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4962,7 +4962,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR060")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -4980,7 +4980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "407395ac-0ccc-43db-9f3d-2521a4581a0c")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR062"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5041,7 +5041,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR061")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -5058,7 +5058,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "469fb33e-c0da-4c0f-a1c6-2900aaa5d48f")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR066"
 			(at 110.49 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5118,7 +5118,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR068")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -5343,7 +5343,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6176b847-7716-46d1-8ef0-a755333c6e00")
-		(property "Reference" "C34"
+		(property "Reference" "C35"
 			(at 68.58 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5429,7 +5429,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C34")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -5652,7 +5652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69b9a439-9684-41d6-b0df-c57401464577")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR059"
 			(at 71.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -5712,7 +5712,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR058")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -5730,7 +5730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d7051c9-cb16-4ede-9d56-08ec194616ce")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR072"
 			(at 160.02 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5791,7 +5791,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR073")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -6113,7 +6113,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71c76152-dd00-4651-8e9e-c69f2fa3c73a")
-		(property "Reference" "C36"
+		(property "Reference" "C37"
 			(at 78.74 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6199,7 +6199,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C36")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -6216,7 +6216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7831ef15-3582-4c5b-bd8d-8ea76107e5da")
-		(property "Reference" "C39"
+		(property "Reference" "C42"
 			(at 165.1 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6302,7 +6302,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C39")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -6319,7 +6319,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e7fa3d8-0bc2-4668-aa73-ce680cb959e3")
-		(property "Reference" "R29"
+		(property "Reference" "R26"
 			(at 111.76 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6405,7 +6405,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "R29")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -6423,7 +6423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "863a3d21-e29b-423f-b6fb-354d843f5de7")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR060"
 			(at 71.12 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -6484,7 +6484,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR059")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -6726,7 +6726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3dd61d4-4117-448c-b009-1b043cea8e2f")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR063"
 			(at 85.09 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6787,7 +6787,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR062")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -6806,7 +6806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6acba86-11eb-4efd-a432-f5a685a08fea")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR071"
 			(at 147.32 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -6867,7 +6867,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR065")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -6884,7 +6884,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be5626fc-5e1f-4341-a805-8ed23b4b6fce")
-		(property "Reference" "R27"
+		(property "Reference" "R29"
 			(at 135.89 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6970,7 +6970,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "R27")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -6987,7 +6987,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1883cd6-7f7a-45d9-a94e-baa7d8a6a170")
-		(property "Reference" "C38"
+		(property "Reference" "C40"
 			(at 154.94 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7073,7 +7073,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C38")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -7091,7 +7091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c787d04a-1a65-4ab6-a1fc-af2ab3a0221e")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR074"
 			(at 162.56 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7152,7 +7152,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR067")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -7169,7 +7169,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cac9c3e5-d87b-4814-8e6f-da7859efa003")
-		(property "Reference" "R28"
+		(property "Reference" "R30"
 			(at 142.24 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7255,7 +7255,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -7273,7 +7273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d914a841-97c6-41c5-acca-924b4d21b3ea")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 78.74 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7359,7 +7359,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -7376,7 +7376,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dcc4d8ac-4d0e-48e5-b5d9-08e244ed6eaa")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 46.99 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7436,7 +7436,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR056")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7453,7 +7453,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2eebea0-e050-4eb1-aee6-2d136ed00625")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR069"
 			(at 146.05 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7513,7 +7513,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR071")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -7530,7 +7530,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e76bf5f6-aa9e-4640-8b6a-97aa68cf093b")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR067"
 			(at 120.65 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7590,7 +7590,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR069")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -7609,7 +7609,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee3a6bce-fb1c-46ce-bf89-a85ecee3eeb9")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR065"
 			(at 92.71 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7670,7 +7670,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR064")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -7688,7 +7688,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4c3e0c4-1cae-4153-9100-2cd969e48900")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR068"
 			(at 120.65 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -7749,7 +7749,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR070")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -7766,7 +7766,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f882dd5d-c6ff-48a2-ae45-96c376c52c55")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 36.83 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -7826,7 +7826,7 @@
 		(instances
 			(project "mini-one-pcb"
 				(path "/ceb43049-5cbf-4c56-aa0a-c2184d7e2ca1/fbe6117f-ca51-436e-8da0-805ced448b63"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
