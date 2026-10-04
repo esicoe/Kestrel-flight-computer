@@ -1,8 +1,7 @@
 /**
  * @file    I2C.h
- * @brief   I2C bus driver
- *          bus setup
- *          register read and write
+ * @brief   I2C peripheral initialization.
+ *          I2C R/W funcion.
  * @author  esicoe
  */
 
@@ -12,43 +11,36 @@
 #include "config.h"
 
 /**
- * @brief   Initializes an I2C bus.
- *          Sets bus clock
- *          Sets GPIO function
- *          Disables internal pulls
- * @param   i2c         I2C instance, i2c0 or i2c1.
- * @return  True if the clock is set, false if it runs above the configured clock.
- * @note    Run once per bus before I2C_WRITE or I2C_READ.
+ * @brief   Initializes I2C0/I2C1.
+ *          Sets bus clock.
+ *          Sets GPIO function.
+ *          Disables internal pulls.
+ * @param   i2c         i2c0/i2c1.
+ * @return  TRUE/FALSE based on set clock.
  */
 bool I2C_INIT(i2c_inst_t *i2c);
 
 /**
- * @brief   Writes one byte to a device register.
- * Sends the register address and the data in one transaction.
- * Ends the transaction with a STOP.
- * @param   i2c         I2C instance, i2c0 or i2c1.
- * @param   address     7-bit device address.
+ * @brief   Writes one byte.
+ * @param   i2c         i2c0/i2c1.
+ * @param   address     Device I2C address.
  * @param   reg         Register address.
- * @param   data        Byte to write.
+ * @param   data        Data to write.
  * @return  PICO_OK on success.
- *          PICO_ERROR_GENERIC if the device does not acknowledge.
- *          PICO_ERROR_TIMEOUT if the transfer takes longer than 1 ms.
- * @note    Blocks for up to 1 ms.
+ *          PICO_ERROR_GENERIC on NACK.
+ *          PICO_ERROR_TIMEOUT if the transaction takes >1ms.
  */
 enum pico_error_codes I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t data);
 
 /**
- * @brief   Reads one byte from a device register.
- *          Writes the register address without a STOP.
- *          Reads the byte after a repeated START, then sends a STOP.
- * @param   i2c         I2C instance, i2c0 or i2c1.
- * @param   address     7-bit device address.
+ * @brief   Reads one byte.
+ * @param   i2c         i2c0/i2c1.
+ * @param   address     Device I2C address.
  * @param   reg         Register address.
- * @param   data        Pointer to where the byte is stored.
+ * @param   data        Pointer to outputted data.
  * @return  PICO_OK on success.
- *          PICO_ERROR_GENERIC if the device does not acknowledge.
- *          PICO_ERROR_TIMEOUT if a transfer takes longer than 1 ms.
- * @note    Blocks for up to 2 ms. data is unchanged on error.
+ *          PICO_ERROR_GENERIC on NACK.
+ *          PICO_ERROR_TIMEOUT if the transaction takes >1ms.
  */
 enum pico_error_codes I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data);
 

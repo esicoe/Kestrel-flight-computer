@@ -1,6 +1,6 @@
 #include "config.h"
 
-void system_init(void) {
+void SYSTEM_INIT(void) {
     gpio_init(PIN_PYRO1);
     gpio_init(PIN_PYRO2);
     gpio_init(PIN_PYRO3);

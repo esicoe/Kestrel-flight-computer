@@ -1,9 +1,9 @@
 /**
  * @file    config.h
- * @brief   pin map
- *          register map, values
- *          AT commands
- *          OPCODES
+ * @brief   RP2354 - PIN map.
+ *          IMU, BAROMETER - register map, values.
+ *          FLASH, SD, GNSS - OPCODES.
+ *          LORA - AT commands. 
  * @author  esicoe
  */
 
@@ -31,48 +31,48 @@
 #include "I2C.h"
 
 // HELPERS
-#define TIMEOUT_1MS     1000    // 1000 us
-#define PYRO_OFF        false
-#define PYRO_ON         true
-#define LED_OFF         false
-#define LED_ON          true
+#define TIMEOUT_1MS             1000UL      // 1000 us
+#define PYRO_OFF                false
+#define PYRO_ON                 true
+#define LED_OFF                 false
+#define LED_ON                  true
 
 // PINOUT
-#define PIN_SPI0_MOSI           19          // PIN 19
-#define PIN_SPI0_MISO           16          // PIN 16
-#define PIN_SPI0_SCK            18          // PIN 18
-#define PIN_SPI0_CS             17          // GPIO17
+#define PIN_SPI0_MOSI           19U         // PIN 19
+#define PIN_SPI0_MISO           16U         // PIN 16
+#define PIN_SPI0_SCK            18U         // PIN 18
+#define PIN_SPI0_CS             17U         // GPIO17
 
-#define PIN_SPI1_MOSI           31          // PIN 39
-#define PIN_SPI1_MISO           28          // PIN 36
-#define PIN_SPI1_SCK            30          // PIN 38
-#define PIN_SPI1_CS             29          // PIN 37
+#define PIN_SPI1_MOSI           31U         // PIN 39
+#define PIN_SPI1_MISO           28U         // PIN 36
+#define PIN_SPI1_SCK            30U         // PIN 38
+#define PIN_SPI1_CS             29U         // PIN 37
 
-#define PIN_I2C0_SCL            9           // PIN 7
-#define PIN_I2C0_SDA            8           // PIN 6
-#define PIN_IMU_INT             7           // PIN 4
+#define PIN_I2C0_SCL            9U          // PIN 7
+#define PIN_I2C0_SDA            8U          // PIN 6
+#define PIN_IMU_INT             7U          // PIN 4
 
-#define PIN_I2C1_SCL            10          // PIN 8
-#define PIN_I2C1_SDA            11          // PIN 9
+#define PIN_I2C1_SCL            10U         // PIN 8
+#define PIN_I2C1_SDA            11U         // PIN 9
 
-#define PIN_UART0_TX            0           // PIN 77
-#define PIN_UART0_RX            1           // PIN 78
-#define PIN_GNSS_RST            2           // PIN 79
+#define PIN_UART0_TX            0U          // PIN 77
+#define PIN_UART0_RX            1U          // PIN 78
+#define PIN_GNSS_RST            2U          // PIN 79
 
-#define PIN_UART1_TX            24          // PIN 25
-#define PIN_UART1_RX            25          // PIN 26
-#define PIN_LORA_RST            20          // PIN 20
+#define PIN_UART1_TX            24U         // PIN 25
+#define PIN_UART1_RX            25U         // PIN 26
+#define PIN_LORA_RST            20U         // PIN 20
 
-#define PIN_SERVO1_PWM          32          // PIN 40
-#define PIN_SERVO2_PWM          36          // PIN 45
+#define PIN_SERVO1_PWM          32U         // PIN 40
+#define PIN_SERVO2_PWM          36U         // PIN 45
 
-#define PIN_PYRO1               43          // PIN 54
-#define PIN_PYRO2               44          // PIN 55
-#define PIN_PYRO3               45          // PIN 56
+#define PIN_PYRO1               43U         // PIN 54
+#define PIN_PYRO2               44U         // PIN 55
+#define PIN_PYRO3               45U         // PIN 56
 
-#define PIN_LED_STATUSA         12          // PIN 11              
-#define PIN_LED_STATUSB         13          // PIN 12
-#define PIN_LED_STATUSC         14          // PIN 13
+#define PIN_LED_STATUSA         12U         // PIN 11              
+#define PIN_LED_STATUSB         13U         // PIN 12
+#define PIN_LED_STATUSC         14U         // PIN 13
 
 // CONFIGURATION
 #define I2C0_CLOCK              400000UL        // 400 KHz
@@ -81,6 +81,10 @@
 #define SPI1_CLOCK              400000UL        // 400 KHz
 #define UART0_BAUD              9600UL          // 9.6 KBd
 #define UART1_BAUD              115200UL        // 115.2 KBd
+
+// ADDRESSES
+#define IMU_ADDRESS              0x6AU
+#define BARO_ADDRESS             0x46U
 
 // REGISTER ADDRESSES
     // IMU
@@ -288,14 +292,14 @@
     #define LORA_EVENT_RX                   "+EVT:RXP2P"
     
 /**
- * @brief   Initializes critical board stuff
- * Sets PYRO pins LOW.
- * Sets USB flashing.
- * Sets LED PIN direction.
+ * @brief   Basic initialization of KESTREL.
+ *          Sets PYRO pins LOW.
+ *          Sets USB flashing.
+ *          Sets LED PIN direction.
  * @param   None.
  * @return  None.
- * @note    Function must run first.
+ * @note    Function must be run first.
  */
-void system_init(void);
+void SYSTEM_INIT(void);
 
 #endif // CONFIG_H
