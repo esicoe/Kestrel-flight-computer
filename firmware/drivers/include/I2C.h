@@ -26,11 +26,10 @@ bool I2C_INIT(i2c_inst_t *i2c);
  * @param   address     Device I2C address.
  * @param   reg         Register address.
  * @param   data        Data to write.
- * @return  PICO_OK on success.
- *          PICO_ERROR_GENERIC on NACK.
- *          PICO_ERROR_TIMEOUT if the transaction takes >1ms.
+ * @return  TRUE on success.
+ *          FALSE on failiure.
  */
-enum pico_error_codes I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t data);
+bool I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t data);
 
 /**
  * @brief   Reads one byte.
@@ -38,10 +37,10 @@ enum pico_error_codes I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, u
  * @param   address     Device I2C address.
  * @param   reg         Register address.
  * @param   data        Pointer to outputted data.
- * @return  PICO_OK on success.
- *          PICO_ERROR_GENERIC on NACK.
- *          PICO_ERROR_TIMEOUT if the transaction takes >1ms.
+ * @param   length      Number of registers to read in sequence.
+ * @return  TRUE on success.
+ *          FALSE on failiure.
  */
-enum pico_error_codes I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data);
+bool I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data, unsigned int length);
 
 #endif // I2C_H
