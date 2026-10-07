@@ -3,4 +3,4 @@
 
 #include "config.h"
 
-#endif // CONFIG_H
+#endif // BMP585_H

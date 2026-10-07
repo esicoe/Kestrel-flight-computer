@@ -74,7 +74,8 @@
 #define PIN_LED_STATUSB         13U         // PIN 12
 #define PIN_LED_STATUSC         14U         // PIN 13
 
-// CONFIGURATION
+
+// CLOCKS
 #define I2C0_CLOCK              400000UL        // 400 kHz
 #define I2C1_CLOCK              400000UL        // 400 kHz
 #define SPI0_CLOCK              20000000UL      // 20 MHz
@@ -438,6 +439,26 @@
 #define OPCODE_LORA_BAND                          "AT+BAND="
 #define OPCODE_LORA_EVENT_TX_DONE                 "+EVT:TXP2P DONE"
 #define OPCODE_LORA_EVENT_RX                      "+EVT:RXP2P"
+
+// SENSOR CONFIGURATION
+struct CONFIGURATION {
+    uint8_t reg;
+    uint8_t value;
+};
+static const struct CONFIGURATION BMP585[] = {
+    {}
+};
+static const struct CONFIGURATION LSM6DSV32X[] = {
+    {}
+};
+
+// ERROR CODES
+enum ERRORS {
+    BMP585          = 0b00000001,
+    LSM6DSV32X      = 0b00000010,
+    W25Q128JVSIQ    = 0b00000100,
+
+};
 
 /**
  * @brief   Basic initialization of KESTREL.
