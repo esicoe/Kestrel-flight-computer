@@ -41,6 +41,6 @@ bool I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t data);
  * @return  TRUE on success.
  *          FALSE on failiure.
  */
-bool I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data, unsigned int length);
+bool I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data, int length);
 
 #endif // I2C_H

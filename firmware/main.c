@@ -2,4 +2,5 @@
 
 void main(void) {
     SYSTEM_INIT();
+    return 0;
 }
