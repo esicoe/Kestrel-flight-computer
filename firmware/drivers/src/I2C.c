@@ -34,17 +34,17 @@ bool I2C_WRITE(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t data) {
     uint8_t buffer[2] = {reg, data};
 
     STATUS = i2c_write_timeout_us(i2c, address, buffer, 2, false, TIMEOUT_1MS);
-    if (STATUS <= 0) return false;
+    if (STATUS != 1) return false;
     return true;
 }
 
-bool I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data, unsigned int length) {
+bool I2C_READ(i2c_inst_t *i2c, uint8_t address, uint8_t reg, uint8_t *data, int length) {
     int STATUS;
 
     STATUS = i2c_write_timeout_us(i2c, address, &reg, 1, true, TIMEOUT_1MS);
-    if (STATUS <= 0) return false;
+    if (STATUS != 1) return false;
 
     STATUS = i2c_read_timeout_us(i2c, address, data, length, false, TIMEOUT_1MS * length);
-    if (STATUS <= 0) return false;
+    if (STATUS != length) return false;
     return true;
 }

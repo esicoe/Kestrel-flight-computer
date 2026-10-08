@@ -29,6 +29,7 @@
 
 // INTERNAL LIBRARY
 #include "I2C.h"
+#include "LED.h"
 
 // HELPERS
 #define TIMEOUT_1MS             1000UL      // 1000 us
@@ -265,6 +266,7 @@
 #define VALUE_IMU_ST_G_NEGATIVE      0x08U       // Self-test negative
 
 #define VALUE_BARO_CHIP_ID           0x51U       // Chip 0x51
+#define VALUE_BARO_STATUS_RDY        0x02U       // Chip ready
 #define VALUE_BARO_CMD_SOFT_RESET    0xB6U       // Command reset
 #define VALUE_BARO_ODR_IS_VALID      0x80U       // ODR valid
 #define VALUE_BARO_PRESS_OFF         0x00U       // Pressure off
@@ -445,26 +447,40 @@ struct CONFIGURATION {
     uint8_t reg;
     uint8_t value;
 };
+
 static const struct CONFIGURATION BMP585[] = {
-    {}
+    {REGISTER_BARO_DSP_CONFIG, VALUE_BARO_DSP_RESERVED | VALUE_BARO_DSP_SHDW_IIR_P                  },
+    {REGISTER_BARO_DSP_IIR,    VALUE_BARO_IIR_P_3      | VALUE_BARO_IIR_T_0                         },
+    {REGISTER_BARO_OSR_CONFIG, VALUE_BARO_PRESS_ON     | VALUE_BARO_OSR_P_8 | VALUE_BARO_OSR_T_1    },
+    {REGISTER_BARO_ODR_CONFIG, VALUE_BARO_DEEP_DISABLE | VALUE_BARO_ODR_140 | VALUE_BARO_MODE_NORMAL},
 };
+
 static const struct CONFIGURATION LSM6DSV32X[] = {
     {}
 };
 
-// ERROR CODES
-enum ERRORS {
-    BMP585          = 0b00000001,
-    LSM6DSV32X      = 0b00000010,
-    W25Q128JVSIQ    = 0b00000100,
-
+// ERROR HANDLING
+enum DISPLAY_CODES {
+    BAROMETER_FAIL  = 0b00000001,
+    IMU_FAIL        = 0b00000010,
+    FLASH_FAIL      = 0b00000100,
+    MicroSD_FAIL    = 0b00000011,
+    LORA_FAIL       = 0b00000110,
+    GNSS_FAIL       = 0b00000111,
+    PASS_1          = 0b00001000,
+    PASS_2          = 0b00010000,
+    PASS_3          = 0b00100000,
+    PASS_4          = 0b00011000,
+    PASS_5          = 0b00110000,
+    PASS_6          = 0b00111000
 };
 
 /**
  * @brief   Basic initialization of KESTREL.
  *          Sets PYRO pins LOW.
- *          Sets USB flashing.
- *          Sets LED PIN direction.
+ *          Enables USB re-flashing.
+ *          Initializes status LEDs.
+ *          
  * @param   None.
  * @return  None.
  * @note    Function must be run first.

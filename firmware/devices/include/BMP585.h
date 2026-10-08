@@ -3,4 +3,12 @@
 
 #include "config.h"
 
+struct BARO_OUTPUT {
+    uint64_t    time_us; 
+    float       pressure_Pa; 
+    uint16_t    temperature_cK; 
+    bool        error;
+    uint8_t     reserved;
+};
+
 #endif // BMP585_H
